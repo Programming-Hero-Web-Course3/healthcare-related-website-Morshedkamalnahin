@@ -1,0 +1,17 @@
+.nav-bar{
+    margin-left: 230px;
+}
+.nav-link{
+    color: white !important;
+    font-size: 1.2em;
+    margin: 0px 20px;
+    border-bottom: 2px solid transparent;
+    transition: 0.6s ease-in;
+}
+.nav-link:hover{
+    border-bottom: 2px solid tomato;
+    color: tomato !important;
+}
+.active{
+    border-bottom: 2px solid tomato;
+}
