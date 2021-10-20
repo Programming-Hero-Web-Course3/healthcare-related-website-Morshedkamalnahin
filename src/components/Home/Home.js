@@ -1,17 +1,22 @@
-import React from 'react'
+import React from 'react';
+import AboutUs from '../AboutUs/AboutUs';
 import Banner from '../Banner/Banner';
-import Contact from '../Contact/Contact';
-import './Home.css'
+import ChooseUs from '../ChooseUs/ChooseUs';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import Servics from '../Servics/Servics';
 
 const Home = () => {
     return (
-        <div className="container m-top">
+        <div>
+            <Header></Header>
             <Banner></Banner>
-            <Contact></Contact>
+            <AboutUs></AboutUs>
+            <Servics></Servics>
+            <ChooseUs></ChooseUs>
+            <Footer></Footer>
         </div>
-
-
-    )
-}
+    );
+};
 
 export default Home;

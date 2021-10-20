@@ -1,45 +1,68 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import "./Footer.css"
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='bg-info '>
-            <Container className="row m-auto mt-5 ">
-                <div className="col-lg-4 col-sm-10">
-
-                    <h4 className=' mt-4 text-start'>Health care</h4>
-                    <p className='footer-item'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae eos explicabo delectus dignissimos! Libero sint laboriosam incidunt voluptas at sunt beatae adipisci dolorem quibusdam quos? Doloribus ex laudantium beatae tenetur?</p>                </div>
-                <div className="col-lg-4 col-sm-10">
+        <div className='footer-container py-5'>
+            <div className="row container mx-auto">
+                <div className="col-lg-3 ">
+                    <h3 className='footer-contact'>Contact</h3>
                     <nav>
-                        <h4 className=' text-start mt-4'>Information</h4>
-
-                        <ul className='list-unstyled  footer-item'>
-
-                            <li className='py-2'>HOME</li>
-                            <li className='py-2'>ABOUT</li>
-                            <li className='py-2'>SERVICE</li>
-                            <li className='py-2'>BLOG</li>
-
+                        <ul className='list-unstyled text-white '>
+                            <li className='py-2 footer-item'>Phone :- <br /> +880 1840225535</li>
+                            <li className='py-2 footer-item'>Email :- <br /> mknahin2000@gmail.com</li>
+                            <li className='py-2 footer-item'>Address :- <br />Cox'sBazar, Chattogram, Bangladesh</li>
                         </ul>
                     </nav>
                 </div>
-                <div className="col-lg-4 col-sm-10">
-                    {/* contact us */}
-                    <h4 className=' mt-4 text-start'>Address</h4>
-                    <div className=' text-start mt-4 fs-5'>
-                        <p><span><i class="fas fa-phone-alt"></i></span> <span className='ms-1'>+8801840225535</span></p>
-                        <p><span><i class="fas fa-envelope"></i></span> <span className='ms-1'>mknahin2000@gmail.com</span></p>
-                        <p><span><i class="fas fa-map-marker-alt"></i></span> <span className='ms-1'>Ramu,Cox's Bazar, BD</span></p>
+                <div className="col-lg-3">
+                    <div className='ms-5'>
+                        <h3 className='footer-contact'>About</h3>
+                        <nav>
+                            <ul className='list-unstyled text-white '>
+                                <li className='py-2 footer-item'>Doctors</li>
+                                <li className='py-2 footer-item'>About</li>
+                                <li className='py-2 footer-item'>Service</li>
+                                <li className='py-2 footer-item'>Blog</li>
+                                <li className='py-2 footer-item'>Contact</li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </Container>
-            <div className='bg-dark   py-2 '>
-                <Container>                <p className='text-center text-light'>&copy;all right nahin</p>
-                </Container>
+                <div className="col-lg-3">
+                    <div className='ms-5'>
+                        <h3 className='footer-contact'>Explore</h3>
+                        <nav>
+                            <ul className='list-unstyled text-white'>
+                                <li className='py-2 footer-item'>Blog</li>
+                                <li className='py-2 footer-item'>Appointment</li>
+                                <li className='py-2 footer-item'>Shop</li>
+                                <li className='py-2 footer-item'>Protfolio</li>
+                                <li className='py-2 footer-item'>Support</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div className="col-lg-3">
+                    <div className='ms-5'>
+                        <h3 className='footer-contact'>Support</h3>
+                        <nav>
+                            <ul className='list-unstyled text-white'>
+                                <li className='py-2 footer-item'>Online Support</li>
+                                <li className='py-2 footer-item'>Free Consultancy</li>
+                                <li className='py-2 footer-item'>24/7 Service</li>
+                                <li className='py-2 footer-item'>Make Call</li>
+                                <li className='py-2 footer-item'>Contact Supoort</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div className='text-center text-white border-top pt-4 copyright-text'>
+                <p>Copyright @2021 Critical Eye Care Hospital</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

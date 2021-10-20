@@ -1,50 +1,22 @@
-import React from 'react'
-import { Carousel, CarouselItem, } from 'react-bootstrap'
+import React from 'react';
+import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className="container mt-5 p-1">
-            <Carousel >
-                <CarouselItem>
-                    <img
-                        className="d-block w-100"
-                        src="https://www.masvenarch.com/wp-content/uploads/2015/03/news-post5.jpg"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </CarouselItem>
-                <CarouselItem>
-                    <img
-                        className="d-block w-100"
-                        src="https://www.masvenarch.com/wp-content/uploads/2015/03/news-post5.jpg"
-                        alt="Second slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </CarouselItem>
-                <CarouselItem>
-                    <img
-                        className="d-block w-100"
-                        src="https://www.masvenarch.com/wp-content/uploads/2015/03/news-post5.jpg"
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </CarouselItem>
-            </Carousel>
+        <div className='background-banner'>
+            <div className="row mx-auto">
+            <div className="col-lg-6 frist-col">
+                <h5 className='banner-name'>Critical Eye Care Center</h5>
+                <h1 className='banner-title'>High Innovation Professional Eye Care</h1>
+                <p className='py-2 fs-5 fw-normal'>In-network providers discount their services in order to access patients through vision-plan directories. Out-of-network providers set aside budgets to leverage various marketing channels. </p>
+                <button className='btn-More'>More About Us</button>
+            </div>
+            <div className="col-lg-6">
+                
+            </div>
+            </div>
         </div>
-
-
-    )
-}
+    );
+};
 
 export default Banner;
