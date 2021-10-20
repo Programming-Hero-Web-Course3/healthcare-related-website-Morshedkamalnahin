@@ -10,7 +10,7 @@ const ServiceDetails = () => {
     const { servicId } = useParams();
     const [servicsDetails, setServicsDetails] = useState({});
     useEffect(() => {
-        const url = `https://raw.githubusercontent.com/Programming-Hero-Web-Course3/healthcare-related-website-Mehedi-irfan/main/public/services.json?token=AUVRIAFUBCRF3SOZKQTBQPLBN3RI4`;
+        const url = `https://raw.githubusercontent.com/Programming-Hero-Web-Course3/healthcare-related-website-Morshedkamalnahin/main/public/services.json?token=AUU5NLGWRZ2NVG74O27OPZ3BOBI3E`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
